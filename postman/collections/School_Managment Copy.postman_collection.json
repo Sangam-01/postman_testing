@@ -1,0 +1,811 @@
+{
+  "info": {
+    "_postman_id": "48292272-275d-48a4-9c6c-8d5c06d58cb7",
+    "name": "School_Managment Copy",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Principal",
+      "item": [
+        {
+          "name": "registration",
+          "id": "0bb7c9c5-2f10-4953-afe6-5d00f864789b",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"MBsunny\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"principal\",\r\n    \"user_id\" : 52,\r\n    \"fname\" : \"Mayur\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/principal/PrincipalReg",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "PrincipalReg"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAll",
+          "id": "cd208931-1af4-4feb-b5c0-11548b7f75f2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/principal/getAll",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "getAll"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "signin",
+          "id": "afff9ac7-d81f-47a3-9651-561b23206785",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"MBsunny\",\r\n    \"password\" : \"12345\" \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/principal/Principalsignin",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "Principalsignin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getTeachers",
+          "id": "382a1bdc-97df-4b50-80d1-f7b3379d8309",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/principal/teachers",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "teachers"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getStudent",
+          "id": "2a2a8d19-d905-4bac-a1b9-694701b1f9f7",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/principal/students",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ClassCount",
+          "id": "4ad93409-a849-4690-b9e5-8f4330eb4eab",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/principal/students/classcount",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "students",
+                "classcount"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "ClassTeacher&Student",
+          "id": "6c1915a5-7f77-47e7-ba6a-9520de64cae1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/principal/teacher/2/students",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "teacher",
+                "2",
+                "students"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "allAccounts",
+          "id": "95ab2210-647d-4fa1-a0b7-45d74634be9f",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"month\" : \"may\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/principal/accounts/fees",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "accounts",
+                "fees"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Acc Symm",
+          "id": "8cab0f38-a190-4867-8c44-9354d7155ea1",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/principal/dashboard/accounts",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "principal",
+                "dashboard",
+                "accounts"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "7c899403-79a8-4468-aea6-b2ff52f2d19a"
+    },
+    {
+      "name": "Student",
+      "item": [
+        {
+          "name": "signin",
+          "id": "c8cde73d-3199-4f90-ae0f-510283c1099a",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"mbsunny\",\r\n    \"password\" : \"12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/student/Studentsignin",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "student",
+                "Studentsignin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "registration",
+          "id": "30614156-443a-49b7-8ffa-22a1068c1676",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"Omya\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"student\",\r\n    \"roll_no\" : \"4\",\r\n    \"reg-no\" : 55,\r\n    \"fname\" : \"Om\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/student/StudentReg",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "student",
+                "StudentReg"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAll",
+          "id": "cb9cf551-60b9-4f37-9318-2094da4d93cf",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/student/getAll",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "student",
+                "getAll"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "31250c5a-cb6d-4fff-917f-47d534f5e7df"
+    },
+    {
+      "name": "Teacher",
+      "item": [
+        {
+          "name": "signin",
+          "id": "7e95944b-8f03-4d4e-882a-b5cfc25203dc",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"vijay123\",\r\n    \"password\" : \"12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/teacher/Teachersignin",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "teacher",
+                "Teachersignin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "registration",
+          "id": "842570ce-bdff-489e-8317-7cf2b69808bb",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"Vijay05\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"teacher\",\r\n    \"user_id\" : 103,\r\n    \"fname\" : \"vijay\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/teacher/TeacherReg",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "teacher",
+                "TeacherReg"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAll",
+          "id": "6a210a42-f3bc-4bf8-abb6-28e4b0e8aa88",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/teacher/getAll",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "teacher",
+                "getAll"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "898b0733-62ad-48d9-bdc0-af3b2f881b16"
+    },
+    {
+      "name": "User",
+      "item": [],
+      "id": "ddf8012e-a53a-486b-a285-34278e28ccc9"
+    },
+    {
+      "name": "Class",
+      "item": [
+        {
+          "name": "getAll",
+          "id": "fd9facb3-66d2-4883-aa0c-4844a3788a2f",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/class/getAll",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "class",
+                "getAll"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddClass",
+          "id": "0f3cf82b-97e8-444b-839a-bc20fa0b2dab",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"class_name\" : \"10\",\r\n    \"section\" : \"A\",\r\n    \"class_teacher_id\" : 1\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/class/Addclass",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "class",
+                "Addclass"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "db2a70bc-968b-4013-ab5a-c0f5f4dd30de"
+    },
+    {
+      "name": "Accountant",
+      "item": [
+        {
+          "name": "registration",
+          "id": "557c61e7-2164-4598-b73c-d8655774c8b5",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"suresh123\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"accountant\",\r\n    \"user_id\" : 107,\r\n    \"fname\" : \"suresh\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/AccountantReg",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "AccountantReg"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "signin",
+          "id": "ffbd8c5f-1d3e-4bd6-8085-7d278c07367a",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"ramesh123\",\r\n    \"password\" : \"12345\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/Accountantsignin",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "Accountantsignin"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "AddCategory",
+          "id": "df68d7ec-563e-4f48-ab1c-44523e73fad7",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"category_name\" : \"trip\",\r\n    \"amount\" : 5000\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/feecategory",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "feecategory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAllCategory",
+          "id": "110b1a94-ce82-4f0d-969e-d4bf9a0f02d9",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"category_name\" : \"exam\",\r\n    \"amount\" : 1000\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/getAllcategory",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "getAllcategory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Assignfees",
+          "id": "d9189834-3ebc-4af7-ad45-45bcdd753d84",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"student_id\" : 1,\r\n    \"category_id\" : \"2\",\r\n    \"amount\" : 5000,\r\n    \"month\" : \"may\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/fees",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "fees"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "UpdateStatus",
+          "id": "f221259f-6e3e-4ef1-a0eb-b0a2f70e3350",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"receipt_no\" : 502,\r\n    \"payment_date\" : \"2025-11-10\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/fees/2/pay",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "fees",
+                "2",
+                "pay"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getFeesByStudent",
+          "id": "dce2ea3d-beb3-4857-af02-77551c2e6dfe",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"student_id\" : 1,\r\n    \"category_name\" : \"exam\",\r\n    \"amount\" : 1000,\r\n    \"month\" : \"may\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/fees/student/1",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "fees",
+                "student",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getAllFees",
+          "id": "81ceb02e-31ce-4f88-b4a0-5cfa73baa0f3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"student_id\" : 1,\r\n    \"category_name\" : \"exam\",\r\n    \"amount\" : 1000,\r\n    \"month\" : \"may\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/getAllfees",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "getAllfees"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "getMonthlydata",
+          "id": "ab8f6800-58bf-4562-a643-8d4499d7b925",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"month\" : \"may\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/reports/monthly",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "reports",
+                "monthly"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "PendingFees",
+          "id": "59e074ef-59c2-49e8-964b-72389a0d1258",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"month\" : \"may\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/accountant/fees/pending",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "accountant",
+                "fees",
+                "pending"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "6e9384dc-1091-4850-b279-889a98ba227d"
+    },
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "registration",
+          "id": "b512ee27-00fc-47b9-b585-ed0ff032700e",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"ganu\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"teacher\",\r\n    \"fname\" : \"ganesh\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/auth/registration",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "auth",
+                "registration"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "signin",
+          "id": "2fe7d205-a9d4-4dd2-b3ca-c5f7b35f4391",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"username\" : \"ganu\",\r\n    \"password\" : \"12345\",\r\n    \"role\" : \"teacher\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{URL}}/auth/signin",
+              "host": [
+                "{{URL}}"
+              ],
+              "path": [
+                "auth",
+                "signin"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "d0b2f8de-ddd5-4ece-8e37-bf3e2a0559e5"
+    }
+  ],
+  "variable": [
+    {
+      "id": "087ae90a-cd38-4161-9918-57f7e91146cb",
+      "key": "URL",
+      "value": "",
+      "type": "default"
+    }
+  ]
+}
